@@ -1,0 +1,72 @@
+body {
+  color: rgb(255, 255, 255);
+  background-color: rgb(40, 44, 53);
+  font-size: xx-large;
+}
+
+div {
+  width: 90%;
+  height: 90%;
+  padding-top: 40px;
+  padding-right: 70px;
+  padding-bottom: 50px;
+  padding-left: 70px;
+}
+body {
+  font-family: Inter UI Regular, sans-serif;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  font-size: large;
+}
+
+@media screen and (min-width: 768px) {
+  div {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+}
+
+a {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkorchid;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: pink;
+  background-color: transparent;
+  text-decoration: underline;
+}
+ul li::before {
+  content: attr(data-icon);
+  /* Make slightly larger than the li font-size
+  but smaller than the li grid-gap */
+  font-size: 1.25em;
+}
+
+li {
+  list-style: none;
+}
+
+.footer {
+  height: 40px; /* footer height */
+  padding-top: 10px;
+  display: block;
+  margin-top: 20px; /* space between content and footer */
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
